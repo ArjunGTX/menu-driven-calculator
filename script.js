@@ -13,7 +13,7 @@ divideBtn.addEventListener('click',divide);
 clearBtn.addEventListener('click',clear);
 
 function validate(input1,input2) {
-    document.getElementById('result').value = "";
+    
     if(isNaN(input1) || isNaN(input2) ){
         alert("Please enter an integer value");
         clear();
@@ -28,7 +28,8 @@ function validate(input1,input2) {
             alert("Please enter an integer value");
             clear();
         }
-    } 
+    }
+    
 }
 
 function clear(){
@@ -38,6 +39,9 @@ function clear(){
 }
 
 function add(){
+    if(input1 == "" || input2 == ""){
+        document.getElementById('result').value = "";
+    }
     let number1 = document.getElementById('number1').value;
     let number2 = document.getElementById('number2').value;
     let test = validate(number1,number2);
@@ -47,6 +51,9 @@ function add(){
     }
 }
 function subtract(){
+    if(input1 == "" || input2 == ""){
+        document.getElementById('result').value = "";
+    }
     let number1 = document.getElementById('number1').value;
     let number2 = document.getElementById('number2').value;
     let test = validate(number1,number2);
@@ -56,6 +63,9 @@ function subtract(){
     }
 }
 function multiply(){
+    if(input1 == "" || input2 == ""){
+        document.getElementById('result').value = "";
+    }
     let number1 = document.getElementById('number1').value;
     let number2 = document.getElementById('number2').value;
     let test = validate(number1,number2);
@@ -65,6 +75,9 @@ function multiply(){
     }
 }
 function divide(){
+    if(input1 == "" || input2 == ""){
+        document.getElementById('result').value = "";
+    }
     let number1 = document.getElementById('number1').value;
     let number2 = document.getElementById('number2').value;
     let test = validate(number1,number2);
