@@ -39,9 +39,6 @@ function clear(){
 }
 
 function add(){
-    if(input1 == "" || input2 == ""){
-        document.getElementById('result').value = "";
-    }
     let number1 = document.getElementById('number1').value;
     let number2 = document.getElementById('number2').value;
     let test = validate(number1,number2);
@@ -51,9 +48,6 @@ function add(){
     }
 }
 function subtract(){
-    if(input1 == "" || input2 == ""){
-        document.getElementById('result').value = "";
-    }
     let number1 = document.getElementById('number1').value;
     let number2 = document.getElementById('number2').value;
     let test = validate(number1,number2);
@@ -63,9 +57,6 @@ function subtract(){
     }
 }
 function multiply(){
-    if(input1 == "" || input2 == ""){
-        document.getElementById('result').value = "";
-    }
     let number1 = document.getElementById('number1').value;
     let number2 = document.getElementById('number2').value;
     let test = validate(number1,number2);
@@ -75,9 +66,6 @@ function multiply(){
     }
 }
 function divide(){
-    if(input1 == "" || input2 == ""){
-        document.getElementById('result').value = "";
-    }
     let number1 = document.getElementById('number1').value;
     let number2 = document.getElementById('number2').value;
     let test = validate(number1,number2);
